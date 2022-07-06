@@ -1,0 +1,13 @@
+<h1>Application HelloWorld</h1>
+
+<h2>Profils Récents:</h2>
+
+<ul>
+{{#each recent}}
+  <li><a href="/users/{{username}}">{{username}}</a></li>
+{{/each}}
+</ul>
+
+
+<p><a href="/auth/login">Se connecter</a> pour mettre à jour votre profil</p>
+<p><a href="/auth/register">Créer un compte</a></p>
